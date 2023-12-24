@@ -3,7 +3,7 @@ NAME := ./a.out
 
 CC := clang++
 LANG := c++
-STD := c++20
+STD := c++2b
 WARNINGS := -Wall -Wextra -Wpedantic -Weffc++ -Wconversion -Wshadow \
 	    -Wnon-virtual-dtor -Wcast-align -Woverloaded-virtual -Wnull-dereference \
 	    -Wno-unused-parameter -Wno-unused-function -Wno-unused-variable
@@ -39,3 +39,6 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
+
+generate_cc:
+	bear -- make

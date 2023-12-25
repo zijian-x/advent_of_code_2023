@@ -12,5 +12,5 @@ int main()
         std::exit(1);
     }
 
-    solve_part1(input);
+    solve_part2(input);
 }
